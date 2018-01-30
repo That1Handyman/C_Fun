@@ -1,0 +1,46 @@
+/*
+ * substring.cpp
+ *
+ *  Created on: Dec 18, 2017
+ *      Author: Frank
+ */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+//cin.getline for string spaces
+//https://stackoverflow.com/questions/5838711/stdcin-input-with-spaces
+
+//IMPORTANT: getline
+//http://www.cplusplus.com/reference/string/string/getline/
+
+//string functions
+//http://www.cplusplus.com/reference/string/string/substr/
+
+int main(){
+
+	string sentence;
+	string target;
+	//string::size_type position;
+
+	cout << "Enter string #1: ";
+	getline(cin,sentence);
+	cout << "Enter string #2: ";
+	cin >> target;
+
+	std::size_t found = sentence.find(target);
+
+
+	if(found != std::string::npos){
+		cout << "Substring found in position " << sentence.find(target) + 1;
+	}else{
+		cout << "Not found";
+	}
+
+	return 0;
+}
+
+
