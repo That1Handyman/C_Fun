@@ -1,6 +1,7 @@
 /*
  * substring.cpp
  *
+ * Program finds if there's a string within a string
  *  Created on: Dec 18, 2017
  *      Author: Frank
  */
